@@ -1,0 +1,58 @@
+<html>
+
+<head>
+  <title>Eventos: Registro</title>
+  <meta charset="UTF-8">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+
+  <script type="module" src="./src/register.js" defer></script>
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand navbar-dark bg-dark">
+    <a class="navbar-brand" href="index.html">Events manager</a>
+  </nav>
+
+  <div class="container">
+    <form action="#" id="form-register" class="mt-4">
+      <legend>Creación cuenta de usuario</legend>
+
+      <div class="form-group">
+        <label for="username">Nombre de usuario:</label>
+        <input type="text" class="form-control" id="username" name="username" placeholder="Username">
+        <div class="invalid-feedback">Campo requerido.</div>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+        <div class="invalid-feedback">Campo requerido.</div>
+      </div>
+      <div class="form-group">
+        <label for="email2">Repetir Email:</label>
+        <input type="email" class="form-control" id="email2" name="email2" placeholder="Email">
+        <div class="invalid-feedback">Campo requerido.</div>
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" class="form-control" id="password" name="password" placeholder="Password">
+        <div class="invalid-feedback">Campo requerido.</div>
+      </div>
+      <div class="form-group">
+        <label for="avatar">Avatar usuario</label>
+        <input type="file" class="form-control" id="avatar" name="avatar">
+      </div>
+      <div>
+        <img src="" alt="" id="imgPreview" class="img-thumbnail">
+      </div>
+      <p class="text-danger" id="errorInfo"></p>
+      <a class="btn btn-secondary" href="./login.html" role="button">Cancelar</a>
+      <button type="submit" class="btn btn-primary">Registrarse</button>
+    </form>
+
+  </div>
+
+</body>
+
+</html>

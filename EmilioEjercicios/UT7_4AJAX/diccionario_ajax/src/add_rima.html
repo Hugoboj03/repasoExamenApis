@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Añadir Rima</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container mt-5">
+    <h1>Añadir una nueva rima</h1>
+    <form id="addRimaForm">
+      <div>
+        <label>Palabra</label>
+        <input type="text" name="palabra" id="palabra" class="form-control" placeholder="Introduce una palabra">
+      </div>
+      <br>
+      <div>
+        <label>Rimas</label>
+        <input type="text" name="rimas" id="rimas" class="form-control" placeholder="Introduce las rimas separadas por comas">
+      </div>
+            <button type="submit" class="btn btn-primary">Guardar</button>
+    </form>
+    <a href="../index.html" class="btn btn-secondary">Volver al Menú</a>
+  </div>
+  <script src="./add_rima.js"></script>
+</body>
+</html>

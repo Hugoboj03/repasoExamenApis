@@ -1,0 +1,59 @@
+<html>
+
+<head>
+  <title>UT6-EVENTOS_FORMULARIOS_1_Actividades</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="eventos_formularios_1.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="./index.html">Visualizar Eventos</a>
+  </nav>
+
+  <div class="container">
+    <form action="#" class="mt-4" id="addEvento">
+      <div class="form-group">
+        <label for="name">Nombre</label>
+        <input type="text" class="form-control" name="name" id="name" placeholder="Nombre">
+        <div class="invalid-feedback">Campo requerido.</div>
+      </div>
+      <div class="form-group">
+        <label for="date">Fecha</label>
+        <input type="date" class="form-control" id="date" name="date">
+        <div class="invalid-feedback">Campo requerido.</div>
+      </div>
+      <div class="form-group">
+        <label for="description">Descripción</label>
+        <textarea class="form-control" id="description" name="description" rows="3"
+          placeholder="Descripción"></textarea>
+        <div class="invalid-feedback">Campo requerido.</div>
+      </div>
+      <div class="form-group">
+        <label for="price">Precio (en €)</label>
+        <input type="number" class="form-control" id="price" name="price" min="0.00" max="10000.00" step="0.01" />
+        <div class="invalid-feedback">Campo requerido.</div>
+      </div>
+      <div class="form-group">
+        <label for="image">Imagen</label>
+        <input type="file" class="form-control" id="image" name="image">
+        <div class="invalid-feedback">Campo requerido.</div>
+      </div>
+      <img src="" alt="" id="imgPreview" class="img-thumbnail">
+
+      <button type="submit" class="btn btn-primary">Añadir</button>
+    </form>
+
+    <div id="eventsContainer" class="card-columns">
+
+    </div>
+  </div>
+
+  <script type="module" src="XHR/add_event.js"></script>
+
+</body>
+
+
+</html>

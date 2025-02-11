@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/cssfile.css">
+</head>
+
+<body>
+    <!-- Formulario para seleccionar acción -->
+    <header>
+        <h1>Diccionario de rimas</h1>
+    </header>
+    <main>
+        <form action="" method="post" id="formulario" name="formulario"><br><br>
+            <select id="menu" name="menu" required>
+                <option value="">Selecciona una rima</option>
+                <option value="1">Agregar rima</option>
+                <option value="2">Obtener rima</option>
+                <option value="3">Eliminar rima</option>
+                <option value="4">Eliminar palabra</option>
+                <option value="5">Buscar rima</option>
+                <option value="6">Select palabras</option>
+            </select>
+            <input type="submit" value="Enviar">
+        </form>
+        <!-- Contenedor para mostrar resultados -->
+        <div id="output"></div>
+    </main>
+   
+    <script src="modelo.js"></script>
+    <script src="controlador.js"></script>
+</body>
+
+</html>

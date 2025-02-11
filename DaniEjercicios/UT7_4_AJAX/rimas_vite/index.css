@@ -1,0 +1,41 @@
+body{
+    background-color:rgb(32, 32, 43);
+
+    color: whitesmoke;
+
+    font-size: larger;
+}
+
+h2{
+    text-decoration: underline;
+    
+}
+
+a{
+    background-color: whitesmoke;
+    color: black;
+    text-decoration: none;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 4px;
+}
+
+#error{
+    color: red;
+}
+
+label{
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: larger;
+}
+
+input{
+    height: 20px;
+}
+
+#boton{
+    width: 100px;
+    height: 30px;
+    font-size: large;
+}

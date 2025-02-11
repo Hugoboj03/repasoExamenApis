@@ -1,0 +1,29 @@
+body{
+    background-color: rgb(209, 209, 209);
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 10px;
+}
+
+nav button {
+    padding: 10px 20px;
+    background-color: #8cc7ff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+div{
+    gap: 5px;
+}
+
+div button {
+
+    background-color: #8cc7ff;
+    border-radius: 5px;
+
+}

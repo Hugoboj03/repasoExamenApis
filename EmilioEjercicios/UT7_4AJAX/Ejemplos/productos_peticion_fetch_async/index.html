@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        td {
+          vertical-align: middle;
+        }
+        #productContainer img {
+          width: 50px;
+        }
+      </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch añadir producto -- gestionado con async/await</title>
+    <script type="module" src="productos.js"></script>
+</head>
+<body>
+    <form id="addProducto">
+        <p>Nombre: <input type="text" name="name" required></p>
+        <p>Descripción: <input type="text" name="desc"></p>
+        <p>Imagen: <input type="file" name="image" required></p>
+        <p><img src="" height="200px" id="preview" alt=""></p>
+        <p><button type="submit">Enviar</button></p>
+      </form>
+      <p><button id="orderName">Ordenar por nombre</button></p>
+      <table>
+        <tbody id="productoContainer"></tbody>
+      </table>
+</body>
+</html>
